@@ -1335,6 +1335,8 @@
 
 .horizontalMenucontainer .main-header.hor-header {
   padding-left: 0;
+  height: unset;
+  background:no-repeat left  url(../img/wda_img/header_bg.png);
 }
 
 // @media (max-width: 578px) and (min-width: 321px) {
