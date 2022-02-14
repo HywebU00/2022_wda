@@ -9,13 +9,17 @@
 .select2-container--default {
   .select2-selection--single {
     background-color: $white;
-    border-color: $border !important;
+    border-width: 2px;
+    border-color:#dedede  !important;
+    //border-radius: 0px;
+    //border-color: $border !important;
     border-radius: 5px;
-    height: 38px;
+    height: 40px;//38px;
     outline: none;
 
     .select2-selection__rendered {
-      color: $gray-700;
+      // color: $gray-700;
+      color: #0D455C;
       line-height: calc(1.5em + 0.75rem + 2px) (-0.1rem);
       padding-left: 0.75rem;
       height: 100%;

@@ -80,6 +80,7 @@
 
     &.sidebar-gone.sidenav-toggled .app-sidebar {
       left: 0;
+      background: rgba(245, 251, 250,1);
     }
   }
 
@@ -474,8 +475,8 @@
   max-height: 100%;
   z-index: 1024;
   background: rgb(255, 255, 255);
-  -webkit-box-shadow: 0px 8px 14.72px 1.28px rgba(154, 154, 204, .1);
-  box-shadow: 0px 8px 14.72px 1.28px rgba(154, 154, 204, .1);
+  -webkit-box-shadow: 0px 8px 14.72px 1.28px rgba(168, 168, 186, 0.434);
+  box-shadow: 0px 8px 14.72px 1.28px rgba(168, 168, 186, 0.434);
   border-right: 1px solid $border;
   -webkit-transition: left 320ms ease, width 320ms ease;
   -o-transition: left 320ms ease, width 320ms ease;
@@ -575,7 +576,7 @@
   list-style: none;
 
   .slide .side-menu__item {
-    padding: 10px 91px 10px 30px;
+    padding: 15px 91px 15px 30px;
     margin: 0;
     border-radius: 0;
   }
@@ -668,7 +669,7 @@ slide is-expanded side-menu__item {
     .side-menu__label,
     .angle,
     .side-menu__icon {
-      color: #7b8191;
+      // color: #7b8191;
       fill: #7b8191;
     }
   }
@@ -688,7 +689,11 @@ slide is-expanded side-menu__item {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $primary !important;
+    // color: $primary !important;
+    background: #5cd3b9;
+    @media (max-width: 768px){
+      background: unset;
+    }
   }
 
   .app-sidebar .slide-menu .slide-item:before:hover {
@@ -719,32 +724,38 @@ slide is-expanded side-menu__item {
 
 .slide.is-expanded {
   a {
-    color: #7b8191;
+    // color: #7b8191;
+    color:#fff;
     text-decoration: none;
+    @media (max-width: 768px){
+      color: #0D455C;
+      &:hover{
+        color: $primary;
+      }
+    }
   }
-
-  .sub-side-menu__item:before {
-    content: "\f22d";
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 9px;
-    color: #7b8191;
-    font-weight: 900;
-  }
+  
+  // .sub-side-menu__item:before {
+  //   content: "\f22d";
+  //   font-family: "Font Awesome 5 Free";
+  //   position: absolute;
+  //   top: 10px;
+  //   left: 15px;
+  //   font-size: 9px;
+  //   font-weight: 900;
+  // }
 
 }
 
-.sub-slide-menu1 .sub-slide-item2:before {
-  content: "\f22d";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  left: 35px !important;
-  font-size: 9px;
-  color: #7b8191;
-  font-weight: 900;
-}
+// .sub-slide-menu1 .sub-slide-item2:before {
+//   content: "\f22d";
+//   font-family: "Font Awesome 5 Free";
+//   position: absolute;
+//   left: 35px !important;
+//   font-size: 9px;
+//   color: #7b8191;
+//   font-weight: 900;
+// }
 
 .side-menu .side-menu__icon {
   font-size: 16px;
@@ -775,9 +786,9 @@ slide is-expanded side-menu__item {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  color: #7b8191;
+  color: #0D455C;//;#7b8191;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;//14px;
   line-height: 1;
   vertical-align: middle;
   font-weight: 400;
@@ -828,10 +839,11 @@ slide is-expanded side-menu__item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   padding: 8px 35px 8px 35px;
   font-weight: 400;
-  color: #7b8191;
+  color: #fff;
+  // color: #7b8191;
 
   .icon {
     margin-right: 5px;
@@ -1316,7 +1328,15 @@ slide is-expanded side-menu__item {
   -ms-flex-align: center;
   align-items: center;
   padding: 7px 0;
-  font-size: 12px;
+  font-size: 15px;
+  &:hover{
+    background: #5cd3b9;
+  }
+  @media (max-width: 768px){
+    &:hover{
+      background: unset;
+    }
+  }
 }
 
 .sub-side-menu__label {
@@ -1390,7 +1410,8 @@ slide is-expanded side-menu__item {
 }
 
 .sub-side-menu__item:hover {
-  color: $primary !important;
+  // color: $primary !important;
+  color: #fff;
 }
 
 .sub-slide.is-expanded .sub-slide-item {
@@ -1400,7 +1421,7 @@ slide is-expanded side-menu__item {
 .sub-slide-menu1 .sub-slide-item2 {
   padding: 6px 0px 6px 48px !important;
   display: block;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .sub-slide .sub-angle2 {
@@ -1408,7 +1429,14 @@ slide is-expanded side-menu__item {
 }
 
 .sub-slide-menu1 .sub-slide-item2:hover {
-  color: $primary !important;
+  // color: $primary !important;
+  color: #fff  !important;
+  @media (max-width: 768px){
+    color: #0D455C;
+    &:hover{
+      color:$primary !important;
+    }
+  }
 }
 
 .app-sidebar {
@@ -1426,17 +1454,17 @@ slide is-expanded side-menu__item {
   max-height: 0;
 }
 
-.app-sidebar .slide-menu .slide-item:before {
-  content: "\f22d";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  top: 9px;
-  left: 20px;
-  font-size: 10px;
-  color: #7b8191;
-  font-weight: 900;
-  opacity: .5;
-}
+// .app-sidebar .slide-menu .slide-item:before {
+//   content: "\f22d";
+//   font-family: "Font Awesome 5 Free";
+//   position: absolute;
+//   top: 9px;
+//   left: 20px;
+//   font-size: 10px;
+//   color: #7b8191;
+//   font-weight: 900;
+//   opacity: .5;
+// }
 
 .app-sidebar__toggle .close-toggle,
 .sidebar-mini.sidenav-toggled .open-toggle {
@@ -2282,9 +2310,9 @@ slide is-expanded side-menu__item {
   display: none;
 }
 
-.slide-menu .sub-slide-menu1 {
-  padding: 0 10px;
-}
+// .slide-menu .sub-slide-menu1 {
+//   padding: 0 10px;
+// }
 
 .sub-slide-menu1 {
   display: none;

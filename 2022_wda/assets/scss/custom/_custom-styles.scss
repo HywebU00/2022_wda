@@ -1,5 +1,5 @@
 :root {
-  --primary-bg-color:#006981B6;//#38cab3;
+  --primary-bg-color:#2fb4bd;//#38cab3;
   --primary-bg-hover: #5cd3b9;
   --primary-bg-border: #38cab3;
   --primary02: rgba(28, 213, 174, 0.2);
@@ -3116,14 +3116,14 @@ pre {
 
 @media (max-width: 768px) {
   .responsive-logo .header-logo {
-    dispLay: block;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    position: absolute;
-    top: 10px;
-    ;
+    // dispLay: block;
+    // margin: 0 auto;
+    // left: 0;
+    // right: 0;
+    // text-align: center;
+    // position: absolute;
+    // top: 10px;
+    // ;
   }
 }
 
@@ -10469,6 +10469,7 @@ ul.timeline:before {
   .responsive-logo {
     .mobile-logo {
       margin-top: 3px !important;
+      width: 45px;
     }
   }
 
