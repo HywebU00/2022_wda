@@ -698,7 +698,9 @@ li{
     // border-radius: 0 0 0.5em 0.5em;
     position: relative;
     background: linear-gradient(180deg, rgba(2, 180, 191, 0.75) 0%, rgba(2, 142, 172, 0.675) 67.19%, rgba(0, 105, 129, 0.7125)100%);
-
+a{
+  color: #fff;
+}
     &::before {
       content: '';
       opacity: 0.3;

@@ -22131,6 +22131,9 @@ html.fullscreen-button .app-content {
   letter-spacing: 0.03em;
   position: relative;
   background: linear-gradient(180deg, rgba(2, 180, 191, 0.75) 0%, rgba(2, 142, 172, 0.675) 67.19%, rgba(0, 105, 129, 0.7125) 100%); }
+  .main-header-right .btn-usebook a,
+  .main-header-right .btn-video a {
+    color: #fff; }
   .main-header-right .btn-usebook::before,
   .main-header-right .btn-video::before {
     content: '';
