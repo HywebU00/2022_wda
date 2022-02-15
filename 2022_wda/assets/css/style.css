@@ -21550,7 +21550,7 @@ html.fullscreen-button .app-content {
     .main-footer::before {
       background-size: cover; } }
   .main-footer .footer-text {
-    text-align: left;
+    text-align: center;
     line-height: 22px; }
   .main-footer .footer-title {
     text-align: left;
