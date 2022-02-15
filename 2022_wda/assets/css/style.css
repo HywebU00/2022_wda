@@ -25237,6 +25237,20 @@ a.option-dots {
     padding: 15px 91px 15px 30px;
     margin: 0;
     border-radius: 0; }
+  .side-menu .user-list a:hover {
+    color: var(--primary-bg-color); }
+  .side-menu .user-info span {
+    color: #0D455C; }
+    .side-menu .user-info span a:hover {
+      color: var(--primary-bg-color); }
+  .side-menu .user-name {
+    color: #0D455C;
+    font-size: 15px; }
+  .side-menu .user-list,
+  .side-menu .user-info {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600; }
 
 slide is-expanded side-menu__item {
   background: rgba(238, 238, 247, 0.9); }
@@ -25833,7 +25847,7 @@ slide is-expanded side-menu__item {
   margin-left: 68px; }
 
 .sub-slide-menu1 .sub-slide-item2:hover {
-  color: #fff  !important; }
+  color: #fff !important; }
   @media (max-width: 768px) {
     .sub-slide-menu1 .sub-slide-item2:hover {
       color: #0D455C; }
