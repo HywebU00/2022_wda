@@ -38675,6 +38675,10 @@ body.rtl {
   .login-content .card-login .btn-verifynumber {
     margin-top: 42px; }
 
+.card-form {
+  margin: 5px;
+  box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.1); }
+
 /* ######## LIB-STYLES ######## */
 /* ###### 4.5 Morris ###### */
 .morris-hover.morris-default-style {
