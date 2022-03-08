@@ -4,6 +4,18 @@
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 3px;
+  //新增
+  font-size: 14px;
+  ul {
+    list-style-type: number;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+    li{
+      margin: 0.5em 0 ;
+     
+    }
+    
+  }
 }
 
 .alert-heading {
@@ -29,7 +41,8 @@
 }
 
 .alert-primary {
-  color: $primary;
+  // color: $primary;
+  color: $default-color;
    background-color: $primary-02;
   border-color: $primary-02;
 
@@ -100,8 +113,10 @@
 
 .alert-danger {
   color: $danger;
-  background-color: rgba(243, 67, 67, .2);
-  border-color: rgba(243, 67, 67, .2);
+  background-color: rgba(243, 67, 67, .1);
+  border-color: rgba(243, 67, 67, .1);
+  // background-color: rgba(243, 67, 67, .2);
+  // border-color: rgba(243, 67, 67, .2);
 
   hr {
     border-top-color: $danger;

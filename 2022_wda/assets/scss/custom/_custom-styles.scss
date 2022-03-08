@@ -11740,9 +11740,12 @@ hr {
 .form-label {
   display: block;
   margin-bottom: .375rem;
+  //font-weight: 500;
+  // font-size: 0.875rem;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1.25em;
   margin-top: 9px;
+  color: $default-color;
 }
 
 .form-group {
@@ -13320,4 +13323,40 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
 }
 .lh-maincard {
   line-height: 1.6 !important;
+}
+
+//新增加ｃｓｓ
+.table-style{
+  border-left: 0;
+  border-right:0;
+  thead{
+    // background-color:lighten(#2fb4bd, 45%);
+    background-color: $light-bg;
+    border-bottom:2px solid $default-color;
+   tr>th{
+    color: $default-color;
+    font-size: 1.25em;
+    padding: 15px 20px 15px;
+   }
+  }
+  tbody{
+    tr{
+      &:hover{
+        background:rgb(244, 244, 244);
+        transition: all 0.5s;
+      }
+    }
+    tr>td,th{
+      font-size: 1.25em;
+      padding: 15px 20px 15px;
+     
+    }
+  }
+}
+
+.breadcrumb-header .breadcrumb{
+  font-size: 1.25em;
+}
+.select2-container--default .select2-selection--single{
+  height: 36px !important;
 }
