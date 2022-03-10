@@ -748,3 +748,31 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+//新增加 btn-group-sticky 功能
+.btnGroup-sticky{
+  // width: 100% ;
+  background: #fff;
+}
+.btnGroup-sticky.sticky-fixed{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+
+}
+
+.btnGroup-sticky2{
+  // width: 100% ;
+  background: #fff;
+}
+.btnGroup-sticky2.sticky-fixed{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+
+}
+

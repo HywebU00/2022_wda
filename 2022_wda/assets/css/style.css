@@ -23820,6 +23820,26 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+.btnGroup-sticky {
+  background: #fff; }
+
+.btnGroup-sticky.sticky-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0; }
+
+.btnGroup-sticky2 {
+  background: #fff; }
+
+.btnGroup-sticky2.sticky-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0; }
+
 .main-header-profile .main-img-user {
   display: inline-block;
   position: relative;
@@ -38731,6 +38751,20 @@ body.rtl {
 
 .form-content .text-primary-deep {
   color: #207a80; }
+
+.form-content .nav-item .nav-link {
+  font-size: 16px;
+  border: 1px solid #0D455C;
+  margin-right: 0.5em;
+  transition: all 0.5s;
+  color: #0D455C; }
+  .form-content .nav-item .nav-link:hover {
+    background: #e4f1f2; }
+
+.form-content .nav-item .nav-link.active {
+  background: #0D455C;
+  transition: all 0.5s;
+  color: #fff; }
 
 .card-form {
   margin: 5px;

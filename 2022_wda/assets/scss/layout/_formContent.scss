@@ -46,6 +46,22 @@
 	.text-primary-deep{
 		color: darken(#2fb4bd, 15%);
 	}
+	.nav-item .nav-link{
+		font-size: 16px;
+		border:1px solid $default-color;
+		margin-right: 0.5em;
+		transition: all 0.5s;
+		color: $default-color;
+		&:hover{
+		  background: #e4f1f2;
+		}
+	  }
+	  
+	  .nav-item .nav-link.active{
+	  background: $default-color ;
+	  transition: all 0.5s;
+	  color: #fff;
+	  }
 }
 
 .card-form {
