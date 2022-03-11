@@ -578,7 +578,9 @@ body{
   font-weight: 500;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(180deg, rgba(2, 180, 191, 0.75) 0%, rgba(2, 142, 172, 0.675) 67.19%, rgba(0, 105, 129, 0.7125)100%);
+  background:linear-gradient(180deg, rgba(113, 209, 215, 1) 0%, rgba(64, 165, 186, 1) 67.19%, rgba(0, 138 ,170, 1) 100%);
+
+  //background: linear-gradient(180deg, rgba(2, 180, 191, 0.75) 0%, rgba(2, 142, 172, 0.675) 67.19%, rgba(0, 105, 129, 0.7125)100%);
 }
 
 .btn-style-white {
@@ -753,6 +755,8 @@ input[type=number] {
 .btnGroup-sticky{
   // width: 100% ;
   background: #fff;
+  
+
 }
 .btnGroup-sticky.sticky-fixed{
   position: fixed;
@@ -760,7 +764,8 @@ input[type=number] {
   z-index: 1;
   left: 0;
   right: 0;
-
+  box-shadow: 0 0 3px rgba(28, 39, 60, 0.5);
+  background: linear-gradient(180deg, rgb(245, 251, 250) 100%, rgb(226, 244, 241) 100%);
 }
 
 .btnGroup-sticky2{
@@ -773,6 +778,11 @@ input[type=number] {
   z-index: 1;
   left: 0;
   right: 0;
-
+  box-shadow: 0 0 3px rgba(28, 39, 60, 0.5);
+  background: linear-gradient(180deg, rgb(245, 251, 250) 100%, rgb(226, 244, 241) 100%);
 }
 
+.text-register{
+  font-weight: 400;
+  font-size: 1.2em;
+}

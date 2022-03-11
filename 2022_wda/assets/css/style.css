@@ -20737,13 +20737,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     border-bottom: 2px solid #0D455C; }
     .table-style thead tr > th {
       color: #0D455C;
-      font-size: 1.25em;
+      font-size: 1.2em;
       padding: 15px 20px 15px; }
   .table-style tbody tr:hover {
     background: #f4f4f4;
     transition: all 0.5s; }
   .table-style tbody tr > td, .table-style tbody th {
-    font-size: 1.25em;
+    font-size: 1.2em;
     padding: 15px 20px 15px; }
 
 .breadcrumb-header .breadcrumb {
@@ -23707,7 +23707,7 @@ body {
   font-weight: 500;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(180deg, rgba(2, 180, 191, 0.75) 0%, rgba(2, 142, 172, 0.675) 67.19%, rgba(0, 105, 129, 0.7125) 100%); }
+  background: linear-gradient(180deg, #71d1d7 0%, #40a5ba 67.19%, #008aaa 100%); }
 
 .btn-style-white {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(235, 247, 248, 0.9) 100%);
@@ -23828,7 +23828,9 @@ input[type=number] {
   bottom: 0;
   z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  box-shadow: 0 0 3px rgba(28, 39, 60, 0.5);
+  background: linear-gradient(180deg, #f5fbfa 100%, #e2f4f1 100%); }
 
 .btnGroup-sticky2 {
   background: #fff; }
@@ -23838,7 +23840,13 @@ input[type=number] {
   bottom: 0;
   z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  box-shadow: 0 0 3px rgba(28, 39, 60, 0.5);
+  background: linear-gradient(180deg, #f5fbfa 100%, #e2f4f1 100%); }
+
+.text-register {
+  font-weight: 400;
+  font-size: 1.2em; }
 
 .main-header-profile .main-img-user {
   display: inline-block;
@@ -38749,6 +38757,12 @@ body.rtl {
 .form-content .card-search {
   background: linear-gradient(180deg, rgba(245, 251, 250, 0.855625) 17.19%, rgba(226, 244, 241, 0.58) 100%) !important; }
 
+.form-content .card-profile {
+  background: url(../img/wda_img/mp_bg.png) no-repeat bottom left !important; }
+  .form-content .card-profile p {
+    font-size: 1.25em;
+    font-weight: 400; }
+
 .form-content .text-primary-deep {
   color: #207a80; }
 
@@ -38757,7 +38771,8 @@ body.rtl {
   border: 1px solid #0D455C;
   margin-right: 0.5em;
   transition: all 0.5s;
-  color: #0D455C; }
+  color: #0D455C;
+  border-radius: 0.6em; }
   .form-content .nav-item .nav-link:hover {
     background: #e4f1f2; }
 
@@ -38766,16 +38781,35 @@ body.rtl {
   transition: all 0.5s;
   color: #fff; }
 
+.form-content .form-control {
+  border: 1px solid #a9cdd0; }
+
+.form-content .form-control.files-area {
+  min-height: 150px;
+  border: dashed 2px #a9cdd0;
+  cursor: pointer;
+  background: no-repeat center center url(../img/wda_img/fancy_upload.png);
+  opacity: 0.5; }
+  .form-content .form-control.files-area:hover {
+    opacity: 0.7; }
+
 .card-form {
   margin: 5px;
   box-shadow: -2px 1px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  margin-bottom: 2em; }
   .card-form .btn.btn-phoneNum {
     font-size: 14px !important;
-    border-radius: 0.25em;
     height: 45px; }
   .card-form .form-text-size {
     font-size: 14px; }
+  .card-form .textarea-register {
+    min-height: 150px; }
+    .card-form .textarea-register::placeholder {
+      color: black;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      resize: none; }
   .card-form .table-title-style {
     font-size: 16px;
     color: #0D455C;
@@ -38808,6 +38842,10 @@ body.rtl {
   .btn-result:hover, .btn-result:active, .btn-result:focus {
     color: #0D455C !important; }
 
+.btn.btn-style-sm {
+  width: 150px;
+  font-size: 1.2em; }
+
 .table-a-style {
   text-decoration: underline; }
   .table-a-style:hover, .table-a-style:active, .table-a-style:focus {
@@ -38816,6 +38854,237 @@ body.rtl {
 
 .bg-primary-light {
   background-color: #e4f1f2; }
+
+.file_download {
+  width: 100%;
+  margin: 0 auto 2em; }
+  .file_download ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  .file_download li {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: .5em 0 .5em 0em;
+    border-bottom: solid 1px #eee; }
+    .file_download li .file_name {
+      line-height: 1.8em;
+      margin: .2em .5em .2em 0;
+      color: #222; }
+      .file_download li .file_name ~ span {
+        flex: 0 0 auto;
+        margin: 0.5em 0.2em;
+        font-size: .875em;
+        line-height: 1.5em;
+        vertical-align: middle;
+        color: #666; }
+        .file_download li .file_name ~ span a.file_icon {
+          color: #fff;
+          display: inline-block;
+          margin-right: 8px; }
+    .file_download li span.file_doc .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_doc .file_icon:hover, .file_download li span.file_doc .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_docx .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_docx .file_icon:hover, .file_download li span.file_docx .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_odt .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_odt .file_icon:hover, .file_download li span.file_odt .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_xls .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_xls .file_icon:hover, .file_download li span.file_xls .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_xlsx .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_xlsx .file_icon:hover, .file_download li span.file_xlsx .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_csv .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_csv .file_icon:hover, .file_download li span.file_csv .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_ods .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_ods .file_icon:hover, .file_download li span.file_ods .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_ppt .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_ppt .file_icon:hover, .file_download li span.file_ppt .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_pptx .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_pptx .file_icon:hover, .file_download li span.file_pptx .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_odp .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_odp .file_icon:hover, .file_download li span.file_odp .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_zip .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_zip .file_icon:hover, .file_download li span.file_zip .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_txt .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_txt .file_icon:hover, .file_download li span.file_txt .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_mov .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_mov .file_icon:hover, .file_download li span.file_mov .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_mp3 .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_mp3 .file_icon:hover, .file_download li span.file_mp3 .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_jpg .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_jpg .file_icon:hover, .file_download li span.file_jpg .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_wmv .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_wmv .file_icon:hover, .file_download li span.file_wmv .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_mp4 .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_mp4 .file_icon:hover, .file_download li span.file_mp4 .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_pdf .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_pdf .file_icon:hover, .file_download li span.file_pdf .file_icon:focus {
+        color: #fff; }
+    .file_download li span.file_other .file_icon {
+      color: #fff;
+      font-weight: bold;
+      padding: .2em .8em;
+      margin-right: 0.5em;
+      border-radius: 3px; }
+      .file_download li span.file_other .file_icon:hover, .file_download li span.file_other .file_icon:focus {
+        color: #fff; }
+    .file_download li span {
+      line-height: 2.5em; }
+      .file_download li span.file_doc a, .file_download li span.file_docx a, .file_download li span.file_odt a {
+        background: #275cb7; }
+        .file_download li span.file_doc a:hover, .file_download li span.file_doc a:focus, .file_download li span.file_docx a:hover, .file_download li span.file_docx a:focus, .file_download li span.file_odt a:hover, .file_download li span.file_odt a:focus {
+          background: #2351a2; }
+      .file_download li span.file_xls a, .file_download li span.file_xlsx a, .file_download li span.file_csv a, .file_download li span.file_ods a {
+        background: #387947; }
+        .file_download li span.file_xls a:hover, .file_download li span.file_xls a:focus, .file_download li span.file_xlsx a:hover, .file_download li span.file_xlsx a:focus, .file_download li span.file_csv a:hover, .file_download li span.file_csv a:focus, .file_download li span.file_ods a:hover, .file_download li span.file_ods a:focus {
+          background: #30683d; }
+      .file_download li span.file_ppt a, .file_download li span.file_pptx a, .file_download li span.file_odp a, .file_download li span.file_pdf a {
+        background: #c55a3b; }
+        .file_download li span.file_ppt a:hover, .file_download li span.file_ppt a:focus, .file_download li span.file_pptx a:hover, .file_download li span.file_pptx a:focus, .file_download li span.file_odp a:hover, .file_download li span.file_odp a:focus, .file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus {
+          background: #b25135; }
+      .file_download li span.file_pdf a {
+        background: #c00; }
+        .file_download li span.file_pdf a:hover, .file_download li span.file_pdf a:focus {
+          background: #b30000; }
+      .file_download li span.file_zip a {
+        background: #eb712e; }
+        .file_download li span.file_zip a:hover, .file_download li span.file_zip a:focus {
+          background: #e96117; }
+      .file_download li span.file_txt a, .file_download li span.file_other a {
+        background: #555; }
+        .file_download li span.file_txt a:hover, .file_download li span.file_txt a:focus, .file_download li span.file_other a:hover, .file_download li span.file_other a:focus {
+          background: #484848; }
+      .file_download li span.file_mov a {
+        background: #009999; }
+        .file_download li span.file_mov a:hover, .file_download li span.file_mov a:focus {
+          background: teal; }
+      .file_download li span.file_mp3 a, .file_download li span.file_mp4 a {
+        background: #088ecc; }
+        .file_download li span.file_mp3 a:hover, .file_download li span.file_mp3 a:focus, .file_download li span.file_mp4 a:hover, .file_download li span.file_mp4 a:focus {
+          background: #077db3; }
+      .file_download li span.file_jpg a {
+        background: #6c29a4; }
+        .file_download li span.file_jpg a:hover, .file_download li span.file_jpg a:focus {
+          background: #5f2490; }
+      .file_download li span.file_wmv a {
+        background: #430a1f; }
+        .file_download li span.file_wmv a:hover, .file_download li span.file_wmv a:focus {
+          background: #2d0715; }
+      .file_download li span .btn-dele {
+        background: unset !important;
+        cursor: pointer;
+        margin: 0 1em 0 0.5em;
+        text-decoration: underline; }
+        .file_download li span .btn-dele:hover {
+          text-decoration: underline;
+          color: #0D455C; }
 
 /* ######## LIB-STYLES ######## */
 /* ###### 4.5 Morris ###### */
